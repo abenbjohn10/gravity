@@ -1,0 +1,124 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
+
+body {
+    background-color: black;
+    font-family: Rajdhani, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+    margin: 0 0 20px;
+    margin-bottom: 90px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=text] {
+    background-color: transparent;
+    font-family: Rajdhani,sans-serif;
+    border: none;
+    text-align: left;
+    color: white;
+    width: 130px;
+    margin: 10px;
+    outline: none;
+}
+
+
+input[type=password] {
+    background-color: transparent;
+    font-family: Rajdhani,sans-serif;
+    border: none;
+    text-align: left;
+    color: white;
+    width: 130px;
+    margin: 10px;
+    outline: none;
+}
+
+button[data-augmented-ui] {
+    text-align: left;
+    font-family: Rajdhani,sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    --aug-border-top: 1px;
+    --aug-border-bottom: 1px;
+    --aug-border-right: 1px;
+    --aug-border-left: 7px;
+    --aug-border-bg: #9c3230;
+    --aug-br: 0.7rem;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.input-container[data-augmented-ui] {
+    width: 100%;
+    align-items: center;
+    --aug-border-all: 1px;
+    --aug-border-bg: white;
+    margin-bottom: 70px;
+    height: 40px;
+    --aug-bl: 0.4rem;
+    --aug-tr: 0.4rem;
+}
+
+label {
+    padding-right: 140px;
+    color: white;
+}
+
+.pass {
+    padding-right: 109px;
+}
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>User Signup</h2>
+        <form>
+           <label>User</label>
+           <div class="input-container" data-augmented-ui="bl-clip tr-clip border">
+                <input type="text" name="username" required >
+            </div>
+            <label class="pass">Password</label>
+            <div class="input-container" data-augmented-ui="bl-clip tr-clip border">
+                <input type="password" name="password" required >
+            </div>
+            <button type="submit" data-augmented-ui="br-clip border">Login</button>
+        </form>
+    </div>
+</body>
+</html>
